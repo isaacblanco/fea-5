@@ -3,6 +3,10 @@
   height: 54px;
 }
 
+.tright {
+  float: right;
+}
+
 mat-card-footer p {
   padding-left: 24px;
 }
