@@ -27,6 +27,9 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTableModule } from '@angular/material/table';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// Shared modules
+import { SharedModule } from './components/shared/shared.module'; // Importar SharedModule
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,6 +50,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatCardModule,
     MatIconModule,
     MatExpansionModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
