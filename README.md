@@ -41,3 +41,5 @@ Adicionalmente, me he tomado la molestia de cambiar los icons de la applicación
 ## Ejercicio 2 - Desplegar
 
 ### Desplegar en entorno real
+
+[PEC5 en entorno real](https://isaacblanco.com/UOC/MASTER/fea/pec5/)

@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { Observable, map } from 'rxjs';
 import { Article } from '../models/article.interface';
 
 @Injectable({
@@ -180,6 +180,8 @@ export class ArticlesService {
     }
   }
 
+  /*
+  OPCION LEYENDO DESDE LOS DATOS LOCALES
   getAllArticles(): Observable<Article[]> {
     console.log('getAllArticles() called');
     return of(this.arrArticles);
@@ -189,8 +191,8 @@ export class ArticlesService {
     console.log('getArticleByUrl() called');
     return of(this.articlesData.find((article) => article.url === url));
   }
+  */
 
-  /*
   getAllArticles(): Observable<Article[]> {
     return this.http
       .get<{ totalArticles: number; articles: Article[] }>(this.apiUrl)
@@ -206,5 +208,4 @@ export class ArticlesService {
         )
       );
   }
-  */
 }
