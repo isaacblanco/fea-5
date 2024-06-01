@@ -1,37 +1,16 @@
-.table {
-  margin-top: 20px;
-  width: 100%; /* Ancho completo de la tabla */
-  border-collapse: collapse; /* Colapsar bordes */
-
-  thead {
-    background-color: #f8f9fa; /* Fondo gris muy clarito para la cabecera */
-  }
-
-  thead th {
-    background-color: #f8f9fa; /* Fondo gris muy clarito para la cabecera */
-    color: #333; /* Color del texto */
-    text-align: left; /* Alineación del texto a la izquierda */
-    padding: 8px; /* Espaciado interior */
-    border-bottom: 2px solid #dee2e6; /* Línea de separación inferior más gruesa */
-  }
-
-  tbody tr:hover {
-    background-color: #ffeeda; /* Fondo gris claro al pasar el ratón por encima */
-    cursor: pointer;
-  }
-
-  tbody td {
-    padding: 8px; /* Espaciado interior de las celdas */
-    border-bottom: 10px solid #dee2e6; /* Línea de separación inferior más gruesa */
-  }
+.table__row {
+  color: #ffbd00; /* Color inicial */
+  transition: color 0.5s ease-out; /* Transición de color */
 }
 
-.table > thead th {
-  background-color: #f8f9fa; /* Fondo gris muy clarito para la cabecera */
-  color: #333; /* Color del texto */
-  text-align: left; /* Alineación del texto a la izquierda */
-  padding: 8px; /* Espaciado interior */
-  border-bottom: 2px solid #dee2e6; /* Línea de separación inferior más gruesa */
+.table__row:hover {
+  background-color: #ffeeda !important; /* Fondo resaltado */
+  cursor: pointer;
+}
+
+.table__row > td {
+  padding: 8px; /* Espaciado interior de las celdas */
+  border-bottom: 10px solid #dee2e6; /* Línea de separación inferior más gruesa */
 }
 
 .mat-mdc-row {

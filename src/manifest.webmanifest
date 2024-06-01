@@ -1,8 +1,8 @@
 {
   "name": "PEC5",
   "short_name": "PEC5",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "theme_color": "#FF007E",
+  "background_color": "#dadada",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",

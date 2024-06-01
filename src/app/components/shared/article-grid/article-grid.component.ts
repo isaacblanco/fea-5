@@ -9,7 +9,7 @@ import { Article } from 'src/app/models/article.interface';
 export class ArticleGridComponent {
   @Input() articles: Article[] = [];
   @Output() rowClicked = new EventEmitter<Article>();
-  displayedColumns: string[] = ['publishedAt', 'title', 'description']; // Columnas
+  displayedColumns: string[] = ['publishedAt', 'title', 'description'];
 
   onRowClick(article: Article): void {
     this.rowClicked.emit(article);

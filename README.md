@@ -12,22 +12,32 @@ Al principio me cree el directorio en GitHub, pero al crear el proyecto use otro
 
 Al trabajar solo, tampoco me centro en ocuparme de ello, por muy buenas costumbres que sean.
 
+Al inicio cree todo sin usar componentes, luego tras releer el enunciado los inclúi adicionalmente.
+
 Url del proyecto en gitHub: https://github.com/isaacblanco/fea-5
 
-##
+## Ejercicio 1
 
-## Lectura de JSON
+### Lectura de JSON
 
 He utilizado una fuente de GNews, tiene la pega que solo permite 100 lecturas diarias, por lo que puede ser un problema si se navega cada página.
 
 En el servicio, hay comentado el formato local que evita el consumo de estas peticiones, tan solo como ejemplo de la forma en que he estado trabajando durante el desarrollo.
 
-## Fuentes
+#### Estrategias de caché
+
+En el caso de gnew solo se devuelven 10 elementos, por lo que seguir la misma estrategia que en el ejemplo me parece correcto.
+
+### Fuentes
 
 Para evitar problemas, he incluido la fuente Roboto en local, así no hay dependencia de la red para usarla.
 
-## Iconos
+### Iconos
 
 Me parece exagerado tener la fuente de Material-design de iconos para dos iconos. Lo he cambiado por dos svg
 
 Adicionalmente, me he tomado la molestia de cambiar los icons de la applicación.
+
+## Ejercicio 2 - Desplegar
+
+### Desplegar en entorno real
