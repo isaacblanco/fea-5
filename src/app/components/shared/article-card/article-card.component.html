@@ -1,0 +1,12 @@
+<mat-card class="card" (click)="onCardClick()">
+  <mat-card-header>
+    <mat-card-title>{{ article.title }}</mat-card-title>
+    <mat-card-subtitle>{{
+      article.publishedAt | formatDate
+    }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="article.image" alt="Article Image" />
+  <mat-card-content>
+    <p>{{ article.description }}</p>
+  </mat-card-content>
+</mat-card>

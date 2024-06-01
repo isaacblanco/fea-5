@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="button-row">
+    <button mat-raised-button color="basic" (click)="modeTable = true">
+      <mat-icon class="mat-icon-right">table_chart</mat-icon>
+    </button>
+    <button mat-raised-button color="basic" (click)="modeTable = false">
+      <mat-icon class="mat-icon-right">view_module</mat-icon>
+    </button>
+  </div>
+</div>
+
+<mat-spinner *ngIf="!articles.length"></mat-spinner>
+<div class="container">
+  <div [@listAnimation]>
+    <app-article-grid
+      *ngIf="modeTable && articles.length"
+      [articles]="articles"
+      (rowClicked)="goToDetail($event)"
+    ></app-article-grid>
+
+    <div *ngIf="!modeTable && articles.length" class="card-container">
+      <app-article-card
+        *ngFor="let article of articles"
+        [article]="article"
+        (articleClicked)="goToDetail($event)"
+      ></app-article-card>
+    </div>
+  </div>
+</div>

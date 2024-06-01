@@ -5,9 +5,9 @@ import { Article } from 'src/app/models/article.interface';
 import { ArticlesService } from 'src/app/services/articles.service';
 
 @Component({
-  selector: 'app-article-card',
-  templateUrl: './article-card.component.html',
-  styleUrls: ['./article-card.component.css'],
+  selector: 'app-article-big-card',
+  templateUrl: './article-big-card.component.html',
+  styleUrls: ['./article-big-card.component.css'],
   animations: [
     trigger('listAnimation', [
       transition('* => *', [
@@ -17,7 +17,7 @@ import { ArticlesService } from 'src/app/services/articles.service';
     ]),
   ],
 })
-export class ArticleCardComponent implements OnInit {
+export class ArticleBigCardComponent implements OnInit {
   article: Article | undefined;
   showAll: boolean = false;
 

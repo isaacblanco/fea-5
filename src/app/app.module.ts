@@ -3,12 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ArticleCardComponent } from './components/article-card/article-card.component';
-import { ArticleListComponent } from './components/article-list/article-list.component';
 
+// Main pages
+import { ArticleBigCardComponent } from './components/articles/article-big-card/article-big-card.component';
+import { ArticleListComponent } from './components/articles/article-list/article-list.component';
+
+// Shared components
+import { ArticleCardComponent } from './components/shared/article-card/article-card.component';
+import { ArticleGridComponent } from './components/shared/article-grid/article-grid.component';
+
+// Web
 import { HttpClientModule } from '@angular/common/http';
 
-// Shared
+// Pipes
 import { FormatDatePipe } from './pipes/date-format.pipe';
 
 // Material Modules
@@ -24,8 +31,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   declarations: [
     AppComponent,
     ArticleListComponent,
-    ArticleCardComponent,
+    ArticleBigCardComponent,
     FormatDatePipe,
+    ArticleCardComponent,
+    ArticleGridComponent,
   ],
   imports: [
     BrowserModule,

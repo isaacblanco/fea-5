@@ -20,7 +20,6 @@ import { ArticlesService } from 'src/app/services/articles.service';
 export class ArticleListComponent implements OnInit {
   articles: Article[] = [];
   modeTable: boolean = true;
-  displayedColumns: string[] = ['publishedAt', 'title', 'description']; // Columnas
 
   constructor(
     private articlesService: ArticlesService,

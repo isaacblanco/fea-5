@@ -4,8 +4,10 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'formatDate',
 })
 export class FormatDatePipe implements PipeTransform {
+  // El método transform es muy especifico de la fecha que se recibe
   transform(value: string, ...args: number[]): any {
     if (!value) return value;
+    // El siguiente código es sucio, pero no depende de librerias
     const date = new Date(value);
     const hours = date.getHours().toString().padStart(2, '0');
     const minutes = date.getMinutes().toString().padStart(2, '0');
