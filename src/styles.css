@@ -1,0 +1,16 @@
+html,
+body {
+  background-color: #dadada;
+  height: 100%;
+}
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 968px;
+}

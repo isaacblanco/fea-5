@@ -1,0 +1,57 @@
+/* Iconos */
+.button-row {
+  display: flex;
+  height: 64px;
+  justify-content: flex-end;
+  margin-left: 8px; /* Espacio entre el texto y el icono */
+  width: 100%;
+}
+
+/* Tabla */
+.table {
+  margin-top: 20px;
+  width: 100%; /* Ancho completo de la tabla */
+  border-collapse: collapse; /* Colapsar bordes */
+
+  thead th {
+    background-color: #f8f9fa; /* Fondo gris muy clarito para la cabecera */
+    color: #333; /* Color del texto */
+    text-align: left; /* Alineación del texto a la izquierda */
+    padding: 8px; /* Espaciado interior */
+    border-bottom: 2px solid #dee2e6; /* Línea de separación inferior más gruesa */
+  }
+
+  tbody tr:hover {
+    background-color: #ffeeda; /* Fondo gris claro al pasar el ratón por encima */
+    cursor: pointer;
+  }
+
+  tbody td {
+    padding: 8px; /* Espaciado interior de las celdas */
+    border-bottom: 10px solid #dee2e6; /* Línea de separación inferior más gruesa */
+  }
+}
+
+.mat-mdc-row {
+  border-bottom: 1px solid #dee2e6; /* Línea de separación entre filas en gris suave */
+  margin-bottom: 12px;
+}
+
+/* Cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Espaciado entre tarjetas */
+}
+
+.card {
+  flex: 1 1 calc(33% - 16px); /* 33% del ancho menos el espaciado */
+  max-width: calc(33% - 16px); /* Asegurar que no exceda el 33% */
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}

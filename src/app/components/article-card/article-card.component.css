@@ -1,0 +1,8 @@
+.button-container-right {
+  justify-content: flex-end;
+  height: 54px;
+}
+
+mat-card-footer p {
+  padding-left: 24px;
+}

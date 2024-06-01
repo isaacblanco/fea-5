@@ -1,0 +1,63 @@
+<div class="container button-container-right">
+  <button mat-raised-button color="basic" (click)="goBack()">
+    Back to List
+  </button>
+</div>
+
+<div class="container" *ngIf="article">
+  <mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{ article.title }}
+      </mat-panel-title>
+      <mat-panel-description>
+        <button
+          *ngIf="showAll == false"
+          mat-raised-button
+          color="basic"
+          (click)="showAll = true"
+        >
+          Show all details
+        </button>
+        <button
+          *ngIf="showAll == true"
+          mat-raised-button
+          color="basic"
+          (click)="showAll = false"
+        >
+          Hide detalis
+        </button>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-card *ngIf="article; else loading" class="article-card">
+      <mat-card-header>
+        <mat-card-title>{{ article.title }}</mat-card-title>
+        <mat-card-subtitle
+          >Published at:
+          {{ article.publishedAt | formatDate }}</mat-card-subtitle
+        >
+      </mat-card-header>
+      <img mat-card-image [src]="article.image" alt="{{ article.title }}" />
+      <mat-card-content>
+        <p>{{ article.description }}</p>
+        <p>{{ article.content }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a mat-button [href]="article.url" target="_blank">Read more</a>
+      </mat-card-actions>
+      <mat-card-footer>
+        <p>
+          <strong>Source:</strong>
+          <a [href]="article.source.url" target="_blank">{{
+            article.source.name
+          }}</a>
+        </p>
+      </mat-card-footer>
+    </mat-card>
+  </mat-expansion-panel>
+
+  <ng-template #loading>
+    <mat-spinner></mat-spinner>
+    <p>Loading article...</p>
+  </ng-template>
+</div>
