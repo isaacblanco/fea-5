@@ -3,6 +3,10 @@
   width: 100%; /* Ancho completo de la tabla */
   border-collapse: collapse; /* Colapsar bordes */
 
+  thead {
+    background-color: #f8f9fa; /* Fondo gris muy clarito para la cabecera */
+  }
+
   thead th {
     background-color: #f8f9fa; /* Fondo gris muy clarito para la cabecera */
     color: #333; /* Color del texto */
@@ -20,6 +24,14 @@
     padding: 8px; /* Espaciado interior de las celdas */
     border-bottom: 10px solid #dee2e6; /* Línea de separación inferior más gruesa */
   }
+}
+
+.table > thead th {
+  background-color: #f8f9fa; /* Fondo gris muy clarito para la cabecera */
+  color: #333; /* Color del texto */
+  text-align: left; /* Alineación del texto a la izquierda */
+  padding: 8px; /* Espaciado interior */
+  border-bottom: 2px solid #dee2e6; /* Línea de separación inferior más gruesa */
 }
 
 .mat-mdc-row {

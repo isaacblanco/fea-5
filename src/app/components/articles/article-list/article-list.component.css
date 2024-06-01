@@ -7,10 +7,21 @@
   width: 100%;
 }
 
+.icon-svg {
+  width: 24px;
+  height: 24px;
+}
+
 /* Tabla */
+
+.mat-mdc-row {
+  border-bottom: 1px solid #dee2e6; /* Línea de separación entre filas en gris suave */
+  margin-bottom: 12px;
+}
 
 /* Cards */
 .card-container {
+  align-items: stretch;
   display: flex;
   flex-wrap: wrap;
   gap: 16px; /* Espaciado entre tarjetas */
