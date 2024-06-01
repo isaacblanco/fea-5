@@ -42,4 +42,10 @@ Adicionalmente, me he tomado la molestia de cambiar los icons de la applicación
 
 ### Desplegar en entorno real
 
-[PEC5 en entorno real](https://isaacblanco.com/UOC/MASTER/fea/pec5/)
+Normalmente durante este semestre he estado publicando en netfily, pero últimante siempre me da problemas con la autenticación, por lo que he optado por montar la aplicación como un subdominio del servidor que suelo usar:
+
+[PEC5 en entorno real](https://feapec5.isaacblanco.com)
+
+He comprobado en ordenador y teléfonos y permite instalar como APP.
+
+Y por lo que veo, el responsive es muy mejorable en el teléfono.
